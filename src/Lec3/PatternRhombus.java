@@ -41,6 +41,7 @@ public class PatternRhombus {
 			row++;
 			System.out.println();
 		}
+		sc.close();
 	}
 
 }
