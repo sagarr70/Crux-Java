@@ -6,7 +6,8 @@ public class PrePost {
 		// x++---> x=x+1
     	int y = x++; //post
 //		System.out.println(x);
-		int z = ++x; //pre
+		int z = ++y; //pre
+		z=z+1;
 		
 	}
 
