@@ -16,11 +16,12 @@ public class selection_Sort {
 				if(a[j]<a[idx]) {
 					idx=j;
 				}
-				if(idx!=i) {
-					int temp=a[i];
-					a[i]=a[idx];
-					a[idx]=temp;
-				}
+				
+			}
+			if(idx!=i) {
+				int temp=a[i];
+				a[i]=a[idx];
+				a[idx]=temp;
 			}
 			
 		}

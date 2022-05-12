@@ -1,12 +1,20 @@
 package Lec7.sorting;
 
+import java.util.Scanner;
+
 public class bubbl_esort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] a= {-7,-6,-2,-11,5,0};
-		bubblesort(a);
-
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		sc.close();
+		bubblesort(arr);
 	}
 
 	private static void bubblesort(int[] a) {
@@ -20,7 +28,7 @@ public class bubbl_esort {
 			}}
 		}
 		for(int i=0;i<a.length;i++) {
-			System.out.print(a[i]+" ");
+			System.out.println(a[i]);
 		}
 		
 	}
