@@ -7,20 +7,23 @@ public class squareroot {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
+		long n=sc.nextLong();
 		System.out.println(sqrt(n));
 		sc.close();
 				
 
 	}
 
-	private static int sqrt(int n) {
-		
-		int start=1;
-		int end=(n/2)-1;
+	private static long sqrt(long n) {
+		if(n==1)
+		{
+			return 1;
+		}
+		long start=1;
+		long end=(n/2);
 		
 		while(start<=end) {
-			int mid=start+(end-start)/2;
+			long mid=start+(end-start)/2;
 			if(mid*mid==n) {
 				return mid;
 				
